@@ -19,32 +19,32 @@ import achv12 from '../../images/achv12.png';
 
 const StyledAchievementsSection = styled.section`
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 60px 0;
   max-width: 1000px;
 
   @media (max-width: 768px) {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   @media (max-width: 480px) {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 
   .inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-gap: 15px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     @media (max-width: 480px) {
-      grid-gap: 10px;
-      margin-top: 20px;
+      grid-gap: 12px;
+      margin-top: 15px;
     }
   }
 `;
@@ -52,17 +52,17 @@ const StyledAchievementsSection = styled.section`
 const StyledAchievement = styled.div`
   background-color: var(--light-navy);
   border-radius: var(--border-radius);
-  padding: 30px;
+  padding: 20px;
   transition: var(--transition);
   position: relative;
   border: 1px solid var(--lightest-navy);
 
   @media (max-width: 768px) {
-    padding: 20px;
+    padding: 16px;
   }
 
   @media (max-width: 480px) {
-    padding: 15px;
+    padding: 12px;
   }
 
   &:hover {
@@ -78,22 +78,22 @@ const StyledAchievement = styled.div`
   .achievement-header {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     @media (max-width: 480px) {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .achievement-icon {
-      width: 140px;
-      height: 120px;
-      margin-right: 20px;
+      width: 120px;
+      height: 100px;
+      margin-right: 15px;
       border-radius: var(--border-radius);
       display: flex;
       align-items: center;
@@ -104,14 +104,14 @@ const StyledAchievement = styled.div`
 
       @media (max-width: 768px) {
         width: 100%;
-        height: 100px;
+        height: 80px;
         margin-right: 0;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
 
       @media (max-width: 480px) {
-        height: 80px;
-        margin-bottom: 10px;
+        height: 70px;
+        margin-bottom: 8px;
       }
 
       img {
@@ -135,31 +135,32 @@ const StyledAchievement = styled.div`
   }
 
   .achievement-title {
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
     color: var(--lightest-slate);
     font-size: var(--fz-xl);
     font-weight: 600;
 
     @media (max-width: 768px) {
       font-size: var(--fz-lg);
+      margin: 0 0 6px 0;
     }
 
     @media (max-width: 480px) {
       font-size: var(--fz-md);
-      margin: 0 0 8px 0;
+      margin: 0 0 5px 0;
     }
   }
 
   .achievement-description {
     color: var(--light-slate);
     font-size: var(--fz-sm);
-    line-height: 1.6;
-    margin-bottom: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
 
     @media (max-width: 480px) {
       font-size: var(--fz-xs);
-      margin-bottom: 10px;
-      line-height: 1.5;
+      margin-bottom: 8px;
+      line-height: 1.4;
     }
   }
 
@@ -179,12 +180,12 @@ const StyledAchievement = styled.div`
   .achievement-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 15px;
+    gap: 6px;
+    margin-top: 10px;
 
     @media (max-width: 480px) {
-      gap: 6px;
-      margin-top: 10px;
+      gap: 4px;
+      margin-top: 8px;
     }
 
     li {

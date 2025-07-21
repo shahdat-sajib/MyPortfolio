@@ -6,40 +6,48 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledCertificationsSection = styled.section`
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 60px 0;
   max-width: 1000px;
 
   @media (max-width: 768px) {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   @media (max-width: 480px) {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 
   .inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 30px;
-    margin-top: 50px;
+    grid-gap: 20px;
+    margin-top: 30px;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-gap: 15px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     @media (max-width: 480px) {
       grid-template-columns: 1fr;
-      grid-gap: 10px;
-      margin-top: 20px;
+      grid-gap: 12px;
+      margin-top: 15px;
     }
   }
 
   .subsection-header {
     grid-column: 1 / -1;
-    margin: 60px 0 30px 0;
+    margin: 40px 0 20px 0;
     text-align: center;
+
+    @media (max-width: 768px) {
+      margin: 30px 0 15px 0;
+    }
+
+    @media (max-width: 480px) {
+      margin: 25px 0 12px 0;
+    }
 
     h3 {
       color: var(--green);
@@ -81,7 +89,7 @@ const StyledCertificationsSection = styled.section`
 const StyledCertification = styled.div`
   background-color: var(--light-navy);
   border-radius: var(--border-radius);
-  padding: 30px;
+  padding: 20px;
   transition: var(--transition);
   position: relative;
   border: 1px solid var(--lightest-navy);
@@ -90,11 +98,11 @@ const StyledCertification = styled.div`
   height: 100%;
 
   @media (max-width: 768px) {
-    padding: 20px;
+    padding: 16px;
   }
 
   @media (max-width: 480px) {
-    padding: 15px;
+    padding: 12px;
   }
 
   &:hover {
@@ -110,10 +118,10 @@ const StyledCertification = styled.div`
   .cert-header {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     @media (max-width: 480px) {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .cert-logo {
