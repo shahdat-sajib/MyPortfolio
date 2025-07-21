@@ -11,8 +11,8 @@
     "gatsby"
   ],
   "engines": {
-  "node": "18.x"
-},
+    "node": ">=16"
+  },
   "license": "MIT",
   "browserslist": "> 0.25%, not dead",
   "scripts": {
