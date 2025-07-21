@@ -38,7 +38,13 @@ const StyledAchievementsSection = styled.section`
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      grid-gap: 20px;
+      grid-gap: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 480px) {
+      grid-gap: 10px;
+      margin-top: 20px;
     }
   }
 `;
@@ -51,15 +57,38 @@ const StyledAchievement = styled.div`
   position: relative;
   border: 1px solid var(--lightest-navy);
 
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
+  }
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
+    @media (max-width: 768px) {
+      transform: none;
+      box-shadow: none;
+    }
   }
 
   .achievement-header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 10px;
+    }
 
     .achievement-icon {
       width: 140px;
@@ -73,6 +102,18 @@ const StyledAchievement = styled.div`
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       cursor: pointer;
 
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 480px) {
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -85,6 +126,11 @@ const StyledAchievement = styled.div`
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       margin-left: auto;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+        align-self: flex-end;
+      }
     }
   }
 
@@ -93,6 +139,15 @@ const StyledAchievement = styled.div`
     color: var(--lightest-slate);
     font-size: var(--fz-xl);
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: var(--fz-lg);
+    }
+
+    @media (max-width: 480px) {
+      font-size: var(--fz-md);
+      margin: 0 0 8px 0;
+    }
   }
 
   .achievement-description {
@@ -100,6 +155,12 @@ const StyledAchievement = styled.div`
     font-size: var(--fz-sm);
     line-height: 1.6;
     margin-bottom: 15px;
+
+    @media (max-width: 480px) {
+      font-size: var(--fz-xs);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
   }
 
   .achievement-organization {
@@ -109,6 +170,10 @@ const StyledAchievement = styled.div`
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+
+    @media (max-width: 480px) {
+      font-size: var(--fz-xxs);
+    }
   }
 
   .achievement-skills {
@@ -116,6 +181,11 @@ const StyledAchievement = styled.div`
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 15px;
+
+    @media (max-width: 480px) {
+      gap: 6px;
+      margin-top: 10px;
+    }
 
     li {
       background-color: var(--navy);
@@ -126,6 +196,11 @@ const StyledAchievement = styled.div`
       border-radius: var(--border-radius);
       list-style: none;
       border: 1px solid var(--green);
+
+      @media (max-width: 480px) {
+        font-size: var(--fz-xxs);
+        padding: 4px 8px;
+      }
     }
   }
 `;
@@ -142,6 +217,11 @@ const Modal = styled.div`
   justify-content: center;
   z-index: 9999;
   backdrop-filter: blur(5px);
+  padding: 20px;
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 
   .modal-content {
     position: relative;
@@ -158,6 +238,13 @@ const Modal = styled.div`
       height: 70vh;
       max-width: 90vw;
       max-height: 80vh;
+    }
+
+    @media (max-width: 480px) {
+      width: 95vw;
+      height: 60vh;
+      max-width: 95vw;
+      max-height: 70vh;
     }
   }
 

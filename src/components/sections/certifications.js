@@ -25,7 +25,14 @@ const StyledCertificationsSection = styled.section`
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      grid-gap: 20px;
+      grid-gap: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      margin-top: 20px;
     }
   }
 
@@ -82,15 +89,32 @@ const StyledCertification = styled.div`
   flex-direction: column;
   height: 100%;
 
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
+  }
+
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
+    @media (max-width: 768px) {
+      transform: none;
+      box-shadow: none;
+    }
   }
 
   .cert-header {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
+
+    @media (max-width: 480px) {
+      margin-bottom: 15px;
+    }
 
     .cert-logo {
       width: 60px;
@@ -105,6 +129,13 @@ const StyledCertification = styled.div`
       font-weight: bold;
       color: var(--navy);
       flex-shrink: 0;
+
+      @media (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        font-size: 20px;
+      }
     }
 
     .cert-info {
