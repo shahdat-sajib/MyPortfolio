@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'MD SHAHDAT HOSAIN',
     description:
-      'MD SHAHDAT HOSAIN is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+      'MD SHAHDAT HOSAIN is a software engineer who specializes in automation (and occasionally designing) exceptional digital experiences.',
+    siteUrl: 'https://shahdat.netlify.app', // Replace with your actual Netlify URL
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '', // Replace with your Twitter handle or remove if you don't have one
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'MD SHAHDAT HOSAIN',
+        short_name: 'MD SHAHDAT HOSAIN',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
