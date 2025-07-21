@@ -18,7 +18,17 @@ import achv11 from '../../images/achv11.png';
 import achv12 from '../../images/achv12.png';
 
 const StyledAchievementsSection = styled.section`
+  margin: 0 auto;
+  padding: 100px 0;
   max-width: 1000px;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 0;
+  }
 
   .inner {
     display: grid;
