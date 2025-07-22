@@ -6,15 +6,15 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledCertificationsSection = styled.section`
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 30px 0;
   max-width: 1000px;
 
   @media (max-width: 768px) {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   @media (max-width: 480px) {
-    padding: 30px 0;
+    padding: 15px 0;
   }
 
   .inner {
@@ -187,6 +187,8 @@ const StyledCertification = styled.div`
     justify-content: flex-start;
     gap: 8px;
     margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 0;
 
     li {
       background-color: var(--navy);
@@ -198,6 +200,7 @@ const StyledCertification = styled.div`
       list-style: none;
       border: 1px solid var(--green);
       width: fit-content;
+      margin: 0;
     }
   }
 

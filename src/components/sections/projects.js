@@ -47,14 +47,14 @@ const StyledProjectsSection = styled.section`
 
   .more-button {
     ${({ theme }) => theme.mixins.button};
-    margin: 40px auto 0;
+    margin: 20px auto 0;
 
     @media (max-width: 768px) {
-      margin: 30px auto 0;
+      margin: 15px auto 0;
     }
 
     @media (max-width: 480px) {
-      margin: 25px auto 0;
+      margin: 12px auto 0;
     }
   }
 `;

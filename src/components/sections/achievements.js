@@ -19,15 +19,15 @@ import achv12 from '../../images/achv12.png';
 
 const StyledAchievementsSection = styled.section`
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 30px 0;
   max-width: 1000px;
 
   @media (max-width: 768px) {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   @media (max-width: 480px) {
-    padding: 30px 0;
+    padding: 15px 0;
   }
 
   .inner {
@@ -183,6 +183,8 @@ const StyledAchievement = styled.div`
     justify-content: flex-start;
     gap: 6px;
     margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
 
     @media (max-width: 480px) {
       gap: 4px;
@@ -199,6 +201,7 @@ const StyledAchievement = styled.div`
       list-style: none;
       border: 1px solid var(--green);
       width: fit-content;
+      margin: 0;
 
       @media (max-width: 480px) {
         font-size: var(--fz-xxs);
