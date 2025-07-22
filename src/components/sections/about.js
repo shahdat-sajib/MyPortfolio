@@ -162,7 +162,7 @@ const About = () => {
               &amp; React.
             </p> */}
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies, tools and frameworks I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">

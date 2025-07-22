@@ -180,6 +180,7 @@ const StyledAchievement = styled.div`
   .achievement-skills {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 6px;
     margin-top: 10px;
 
@@ -197,6 +198,9 @@ const StyledAchievement = styled.div`
       border-radius: var(--border-radius);
       list-style: none;
       border: 1px solid var(--green);
+      flex: 1 1 auto;
+      min-width: fit-content;
+      text-align: center;
 
       @media (max-width: 480px) {
         font-size: var(--fz-xxs);

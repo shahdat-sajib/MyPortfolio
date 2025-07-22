@@ -35,11 +35,27 @@ const StyledProjectsSection = styled.section`
     @media (max-width: 1080px) {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      margin-top: 30px;
+    }
   }
 
   .more-button {
     ${({ theme }) => theme.mixins.button};
-    margin: 80px auto 0;
+    margin: 40px auto 0;
+
+    @media (max-width: 768px) {
+      margin: 30px auto 0;
+    }
+
+    @media (max-width: 480px) {
+      margin: 25px auto 0;
+    }
   }
 `;
 
