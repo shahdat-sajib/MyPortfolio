@@ -198,9 +198,7 @@ const StyledAchievement = styled.div`
       border-radius: var(--border-radius);
       list-style: none;
       border: 1px solid var(--green);
-      flex: 1 1 auto;
-      min-width: fit-content;
-      text-align: center;
+      width: fit-content;
 
       @media (max-width: 480px) {
         font-size: var(--fz-xxs);
